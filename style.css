@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header h1{
+    padding: 5px;
+    color: #002782;
+    text-align: center;
+    background: rgba(156, 155, 155, 0.5);
+    backdrop-filter: blur(15px);
+}
+
+body{
+    color: #002782;
+    font-family: monospace;
+    background:  #f7f6fb;
+}
+.instruction{
+    text-transform: capitalize;
+    background-color: #00919c;;
+    max-width: 700px;
+    width: 98%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+}
+.instruction h2{
+    margin-bottom: 20px;
+    color: #002782;
+    text-align: center;
+}
+.instruction p{
+    margin-bottom: 15px;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+.instruction button{
+    margin-top: 30px;
+    text-align: center;
+    border: none;
+    padding: 20px;
+    color: #002782;
+    margin-left: 150px;
+    border-radius: 15px;
+    background: #f7f6fb;
+    
+    font-size: 1.5rem;
+}
+.instruction button:hover{
+    background: #002782;
+    color: #f7f6fb;
+   
+}
+.game {
+    display: none;
+    background-color: #0d2c74;
+    color: #f7f6fb;
+    max-width: 700px;
+    width: 100%;
+    text-transform: capitalize;
+    margin: auto;
+    font-size: 1.5rem;
+    margin-top:0px;
+    padding:10px;
+    padding-bottom: 60px;
+}
+.game p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1rem;
+    color: #f7f6fb;
+}
+.game p span{
+    color: red;
+}
+.game .incorrect {
+    color: red;
+}
+.game .gameover{
+    border: 2px solid red;
+    color: red;
+}
+.game h2{
+    text-align: center;
+    margin: auto;
+    font-size: 2.5rem;
+    background-color: #f7f6fb;
+    color: #147a60;
+    margin-bottom: 20px;
+}
+.game input{
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 15vh;
+    margin-bottom: 40px;
+}
+.game input::placeholder{
+    color: #147a60;
+    font-size: 1rem;
+}
+.game button{
+    margin-left: 160px;
+    border: none;
+    color: #147a60;
+    background: #f7f6fb;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    display: none;
+}
+/* .failed{
+    position: absolute;
+    width: 100%;
+    background-color: #002782;
+} */
+.game button:hover{
+    color: #f7f6fb;
+    background: #147a60;
+}
+.game h3{
+    margin-bottom: 15px;
+}
+.game h3 #time-left{
+    color: red;
+}
+.game  h4{
+    margin-bottom: 15px;
+    color: #147a60;
+    text-align: center;
+}
+.game h3 #score {
+    color: #147a60;
+}

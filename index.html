@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <h1>type<sub>ly</sub></h1>
+        </div>
+        
+    </header>
+    <section class="instruction">
+        <h2>Listen Up!!!</h2>
+        <p>Type the word you see in a given amount of 10 seconds or you loose the game 😥😥. <br>
+            you snooze you loose!!! <br>
+            type the wrong word you loose!!!
+        </p>
+        <p><b>Got it?</b></p>
+        <p><b>Okay! let's do this!!!</b> </p>
+        <button id="start-game">Start Game</button>
+    </section>
+    <section class="game">
+         <p>type the given word within <span id="time"></span> seconds</p>
+         <br>
+         <hr>
+         <h2 id="curr-word">
+                
+        </h2>
+        <input type="text" id="word-input" placeholder="Start typing" autofocus>
+        <h4 id="error-message">
+        </h4>
+        <div class="failed">
+            <!-- <h1>Game Over!</h1> -->
+            <button id="restart">Restart Game</button>
+        </div>
+        <h3>time left: <span id="time-left"></span></h3>
+        <h3>score:<span id="score"></span></h3>
+         
+    </section>
+
+    <script src="app.mjs" defer></script>
+</body>
+</html>
