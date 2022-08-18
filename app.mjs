@@ -175,8 +175,6 @@ function checkgameStatus() {
             time = currrentLevel + 1;
             getRandomWords();
             wordInput.value = ``;
-            score = 0; 
-            score++;
             finalScore.innerText = `${score}`;
             errorMessage.innerText = ``;
             errorMessage.classList.remove("gameover");
