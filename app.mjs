@@ -172,12 +172,12 @@ function checkgameStatus() {
         wordInput.value = ``;
         restartGame.style.display = "block";
         restartGame.addEventListener("click", () => { 
-              matchInput();
-            //time = currrentLevel + 1;
-            //getRandomWords();
-            //wordInput.value = ``;
-            //finalScore.innerText = `${score}`;
-            //errorMessage.innerText = ``;
+            time = currrentLevel + 1;
+            getRandomWords();
+            score = score -1;
+            wordInput.value = ``;
+            finalScore.innerText = `${score}`;
+            errorMessage.innerText = ``;
             errorMessage.classList.remove("gameover");
             restartGame.style.display ="none"
         })
