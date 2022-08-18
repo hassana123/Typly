@@ -170,12 +170,12 @@ function checkgameStatus() {
         errorMessage.innerText = "game over";
         errorMessage.classList.add("gameover");
         wordInput.value = ``;
-        score = 0;
         restartGame.style.display = "block";
         restartGame.addEventListener("click", () => { 
             time = currrentLevel + 1;
             getRandomWords();
             wordInput.value = ``;
+            score = 0; 
             score++;
             finalScore.innerText = `${score}`;
             errorMessage.innerText = ``;
