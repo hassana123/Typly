@@ -174,7 +174,7 @@ function checkgameStatus() {
         restartGame.addEventListener("click", () => { 
             time = currrentLevel + 1;
             getRandomWords();
-            score = score -1;
+            score = 0;
             wordInput.value = ``;
             finalScore.innerText = `${score}`;
             errorMessage.innerText = ``;
